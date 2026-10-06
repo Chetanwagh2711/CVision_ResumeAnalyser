@@ -1,0 +1,14 @@
+from ucimlrepo import fetch_ucirepo 
+  
+# fetch dataset 
+facebook_metrics = fetch_ucirepo(id=368) 
+  
+# data (as pandas dataframes) 
+X = facebook_metrics.data.features 
+y = facebook_metrics.data.targets 
+  
+# metadata 
+print(facebook_metrics.metadata) 
+  
+# variable information 
+print(facebook_metrics.variables) 
